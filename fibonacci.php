@@ -5,7 +5,7 @@ foreach ($generator as $i) {
 }
 
 function fibonacci() {
-	if (version_compare(phpversion(), '5.5.0', '>')) {
+	if (version_compare(phpversion(), '5.5.0', '>=')) {
 		// 5.4.0 supports short array syntax
 		// 5.5.0 supports generators (yield)
 		list($a, $b) = [0, 1];
